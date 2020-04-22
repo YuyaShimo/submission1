@@ -1,0 +1,130 @@
+/*---------------------------------------
+リセットCSSここから
+-----------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/*---------------------------------------
+リセットCSSここまで
+-----------------------------------------*/
+
+/*---------------------------------------
+ヘッダーここから
+-----------------------------------------*/
+html {
+    font-size: 20px;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: #007655;
+}
+
+.header-inner {
+    z-index: 2;
+    padding: 30px;
+}
+
+.header-logo a{
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navi-list {
+    display: flex;
+    text-align: center;
+}
+
+.header-navi-item a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-navi-item a::before,
+.header-navi-item a::after {
+  border-bottom: solid 2px #fff;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all .8s ease;
+  -webkit-transition: all .8s ease;
+  width: 0;
+}
+.header-navi-item a::before {
+  left: 50%;
+}
+.header-navi-item a::after {
+  right: 50%;
+}
+.header-navi-item a:hover::before,
+.header-navi-item a:hover::after {
+  width: 50%;
+}
+/*---------------------------------------
+ヘッダーここまで
+-----------------------------------------*/
+
+/*---------------------------------------
+
+-----------------------------------------*/
+
+/*---------------------------------------
+ヘッダーここまで
+-----------------------------------------*/
