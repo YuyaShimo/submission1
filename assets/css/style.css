@@ -207,6 +207,10 @@ h2::after {
     justify-content: space-between;
 }
 
+.concept-sentence {
+    width: 500px;
+}
+
 
 
 /*-----------------------------------
