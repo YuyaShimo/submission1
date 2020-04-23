@@ -284,11 +284,16 @@ About END
     margin-bottom: 60px;
 }
 
+.shop-text > p {
+    text-align: center;
+}
+
 .shop:nth-child(n+4) {
     margin-bottom: 0;
 }
 
 .shop-name {
+    font-weight: bold;
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 16px;
@@ -313,4 +318,40 @@ About END
 
 /*-----------------------------------
 ショップEND
+-----------------------------------*/
+
+/*-----------------------------------
+メンバーSTART
+-----------------------------------*/
+.member-inner {
+    width: 900px;
+    margin: auto;
+}
+
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.member {
+    margin-bottom: 60px;
+}
+
+.member-img > img {
+    border: 5px solid orange;
+    border-radius: 50%;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.member-profile > p {
+    text-align: center;
+    line-height: 2;
+}
+
+/*-----------------------------------
+メンバーEND
 -----------------------------------*/
