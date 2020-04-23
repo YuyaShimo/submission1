@@ -56,10 +56,10 @@ html {
 }
 
 h2 {
+    padding: 100px 0;
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 60px;
 }
 h2::before,
 h2::after {
@@ -71,6 +71,14 @@ h2::after {
     margin: 0 8px;
     background-color: #000;
 }
+
+h3 {
+    padding: 50px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 /*-----------------------------------
 共通END
 -----------------------------------*/
@@ -105,6 +113,12 @@ h2::after {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.header-navi {
+    position: absolute;
+    left: 450px;
 }
 
 .header-navi-list {
@@ -141,6 +155,7 @@ h2::after {
 .header-navi-item a:hover::after {
   width: 50%;
 }
+
 /*-----------------------------------
 ヘッダーEND
 -----------------------------------*/
@@ -157,7 +172,7 @@ h2::after {
     width: 100%;
     height: 80vh;
     min-height: 660px;
-    margin-bottom: 50px;
+    
 }
 
 .mainKv-title {
@@ -174,6 +189,47 @@ h2::after {
 /*-----------------------------------
 メインイメージEND
 -----------------------------------*/
+
+/*-----------------------------------
+About START
+-----------------------------------*/
+.about-mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+}
+.about-text {
+    background-image: url(../../assets/images/zebrawood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.about-subtitle {
+    padding: 50px 0 0 0;
+
+}
+
+.about-sentence {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    margin: auto;
+    line-height: 3;
+    font-weight: bold;
+}
+
+
+
+/*-----------------------------------
+About END
+-----------------------------------*/
+
 
 /*-----------------------------------
 コンセプトSTART
