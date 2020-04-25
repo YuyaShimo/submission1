@@ -100,7 +100,7 @@ h3 {
     padding: 30px;
 }
 
-.header-logo a{
+.header-logo a {
     display: block;
     font-weight: bold;
     font-size: 1.5rem;
@@ -354,4 +354,72 @@ About END
 
 /*-----------------------------------
 メンバーEND
+-----------------------------------*/
+
+/*-----------------------------------
+コンタクトSTART
+-----------------------------------*/
+.contact-cat {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.contact-item {
+    margin-bottom: 40px;
+}
+
+.contact > dt {
+    margin-bottom: 8px;
+}
+
+.contact-item > dd > input {
+    display: block;
+    height: 50px;
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+}
+
+.contact-item > dd > textarea {
+    display: block;
+    padding: 24px;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+    background-image: none;
+    border-radius: 4px;
+}
+
+.contact-btn {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #cdcdcd;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+    font-size: 18px;
+    padding: 15px 40px;
+    margin: 108px auto 0;
+    width: 300px;
+    height: 60px;
+    border-radius: 3px;
+}
+
+.contact-btn:hover {
+    color: #fff;
+    background-color: #555;
+}
+
+
+/*-----------------------------------
+コンタクトEND
 -----------------------------------*/
