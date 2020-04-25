@@ -17,11 +17,11 @@
         </div>
         <nav class="header-navi">
             <ul class="header-navi-list">
-                <li class="header-navi-item"><a href="#">ABOUT</a></li>
-                <li class="header-navi-item"><a href="#">CONCEPT</a></li>
-                <li class="header-navi-item"><a href="#">SHOP</a></li>
-                <li class="header-navi-item"><a href="#">MEMBER</a></li>
-                <li class="header-navi-item"><a href="#">CONTACT</a></li>
+                <li class="header-navi-item"><a href="about">ABOUT</a></li>
+                <li class="header-navi-item"><a href="concept">CONCEPT</a></li>
+                <li class="header-navi-item"><a href="shop">SHOP</a></li>
+                <li class="header-navi-item"><a href="member">MEMBER</a></li>
+                <li class="header-navi-item"><a href="contact">CONTACT</a></li>
             </ul>
         </nav>
     </div>
@@ -36,7 +36,7 @@
 
 <!--About START-->
 <section class="about-wrap">
-    <h2 class="shop-title">ABOUT</h2>
+    <h2 class="shop-title" id="about">ABOUT</h2>
     <div class="about-inner">
         <div class="about-text"> 
                 <div class="about-mask">
@@ -55,7 +55,7 @@
 <!--コンセプトSTART-->
 <section class="concept-wrap">
     <div class="concept-inner">
-        <h2 class="concept-title">CONCEPT</h2>
+        <h2 class="concept-title" id="concept">CONCEPT</h2>
         <div class="concept-cat">
             <div class="concept-img">
                 <img src="./assets/images/concept.jpg" alt="">
@@ -79,7 +79,7 @@
 <!--ショツプStART-->
 <section class="shop-wrap">
     <div class="shop-inner"></div>
-        <h2 class="shop-title">SHOP</h2>
+        <h2 class="shop-title" id="shop">SHOP</h2>
         <div class="shop-list-cat">
             <ul class="shop-list">
                 <li class="shop">
@@ -251,7 +251,35 @@
     </div>
 </section>
 <!--メンバーEND-->
-    
+
+<!--コンタクトSTART-->
+<section class="contact-wrap">
+    <div class="contact-inner">
+        <h2 class="contact-title" id="contact">CONTACT</h2>
+        <div class="contact-cat">
+            <form action="" name="contact" id="valform">
+                <dl class="contact-item">
+                    <dt><label for="name" class="contact-label">お名前</label></dt>
+                    <dd><input placeholder="例：山田 太郎" type="text"></dd>
+                </dl>
+                <dl class="contact-item">
+                    <dt><label for="mail" class="contact-label">メールアドレス</label></dt>
+                    <dd><input placeholder="例：abcd@gmail.com" type="email"></dd>
+                </dl>
+                <dl class="contact-item">
+                    <dt><label for="tel" class="contact-label">電話番号</label></dt>
+                    <dd><input placeholder="例：09012345678" type="tel"></dd>
+                </dl>
+                <dl class="contact-item">
+                    <dt><label for="textarea">お問い合わせ内容</label></dt>
+                    <dd><textarea name="textarea" id="textarea" placeholder="お問い合わせ内容を入力してください" cols="30" rows="10"></textarea></dd>
+                </dl>
+                <button class="contact-btn">送信</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!--コンタクトEND-->
     
     
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
