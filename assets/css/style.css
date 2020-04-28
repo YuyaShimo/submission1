@@ -95,9 +95,9 @@ h3 {
     background-color: #007655;
 }
 
-.header-inner {
-    z-index: 2;
-    padding: 30px;
+.header-inner input,
+.header-inner label {
+    display: none;
 }
 
 .header-logo a {
@@ -109,10 +109,13 @@ h3 {
 }
 
 .header-inner {
+    z-index: 2;
+    padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header-navi-list {
@@ -157,7 +160,7 @@ h3 {
 /*-----------------------------------
 メインイメージSTART
 -----------------------------------*/
-.mainKv {
+/*.mainKv {
     position: relative;
     background-image: url(../../assets/images/kv.jpg);
     background-position: center;
@@ -170,6 +173,7 @@ h3 {
 }
 
 .mainKv-title {
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -179,7 +183,32 @@ h3 {
     font-weight: bold;
     color: #fff;
     text-shadow: 10px 10px 5px #000;
+} 
+
+.mainKv-title > span {
+    position: relative;
+  top: 10px; 
+  left: 10px;
+  opacity: 0;
 }
+*/
+.main-Kv-wrap {
+    width: 100%;
+    height:700px;
+}
+
+#slide {
+    margin:0 auto;
+    position:relative;
+    }
+
+    #slide img {
+    position:absolute;
+    left:0;
+    top:0;
+    
+    }
+
 /*-----------------------------------
 メインイメージEND
 -----------------------------------*/
@@ -217,8 +246,6 @@ About START
     line-height: 3;
     font-weight: bold;
 }
-
-
 
 /*-----------------------------------
 About END
@@ -268,8 +295,9 @@ About END
 ショップSTART
 -----------------------------------*/
 .shop-inner {
-    width: 1280px;
+    width: 1080px;
     padding: 0;
+    margin: auto;
 }
 
 .shop-list {
@@ -359,6 +387,10 @@ About END
 /*-----------------------------------
 FAQ START
 -----------------------------------*/
+.faq-list-cat {
+    width: 900px;
+    margin: auto;
+}
 .faq-list-item {
     margin:10px;
     border-bottom:1px solid #ccc;
@@ -366,16 +398,15 @@ FAQ START
     cursor:pointer;
     text-align: left;
   }
-  
-  .faq-list-item h3 {
-    font-size: 14px;
-  }
-  
-  .faq-list-item span {
+  .question {
+      font-size: 0.8rem;
+  } 
+  .faq-list-item > span {
+    font-weight: bold;
     position:absolute;
     top:0;
     right:5px;
-    color:#ccc;
+    color:rgb(10, 10, 10);
   }
   
   .answer {
@@ -443,7 +474,7 @@ FAQ END
     transition: all 0.25s ease-in-out;
     font-size: 18px;
     padding: 15px 40px;
-    margin: 108px auto 0;
+    margin: 108px auto 100px;
     width: 300px;
     height: 60px;
     border-radius: 3px;
@@ -462,13 +493,65 @@ FAQ END
 /*-----------------------------------
 フッターSTART
 -----------------------------------*/
+.footer {
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    height: 400px;
+}
 
-.footer > p {
-    padding: 16px;
-    font-size: .8rem;
+.footer-inner {
+    width: 1080px;
+    margin: auto;
+}
+
+
+.company-summary {
+    color: rgba(255, 255, 255);
+}
+
+.company-info {
+    color: rgba(255, 255, 255);
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.footer p {
+    color: rgba(255, 255, 255);
     text-align: center;
 }
 
+
 /*-----------------------------------
-コンタクトEND
+フッターEND
 -----------------------------------*/
+/*
+@media screen and(max-width:768px) {
+    html {
+        font-size: 16px;
+    }
+
+    /*ヘッダー
+    .header-inner {
+        padding: 10px;
+    }
+    .header-logo > a {
+        font-size: 1.2rem;
+    }
+
+    /*ハンバーガーメニュー*/
+    
+
+    /* メインイメージ 
+    .mainKv {
+        height: 100vh;
+        background-position: center right -200px;
+    }
+    .mainKv-title {
+        width: 100%;
+        text-align: center;
+    }
+    .mainKv-title h1 {
+        font-size: 2.6rem;
+    }
+} 
