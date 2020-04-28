@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.textAnimation.js"></script>
 </head>
 <body>
 <!--ヘッダーSTARTー-->
@@ -30,8 +31,14 @@
 <!--ヘッダENDー-->
 
 <!--メインイメージSTART-->
-<section class="mainKv">
-    <h1 class="mainKv-title">テキストがはいります</h1>
+<section class="main-Kv-wrap">
+    <div id="slide">
+        <ul>
+            <li><a href=""><img src="./assets/images/kv2.jpg" alt=""></a></li>
+            <li><a href=""><img src="./assets/images/kv3.jpg" alt=""></a></li>
+            <li><a href=""><img src="./assets/images/kv4.jpg" alt=""></a></li>
+        </ul>
+    </div>
 </section>
 <!--メインイメージEND-->
 
@@ -79,7 +86,7 @@
 
 <!--ショツプStART-->
 <section class="shop-wrap">
-    <div class="shop-inner"></div>
+    <div class="shop-inner">
         <h2 class="shop-title" id="shop">SHOP</h2>
         <div class="shop-list-cat">
             <ul class="shop-list">
@@ -263,21 +270,35 @@
                     <h3 class="question">登録は有料ですか？</h3>
                         <span>+</span>
                         <div class="answer">
-                            <p>登録は無料です。商品購入時に料金が発生します。</p>
+                            <p>A.登録は無料です。商品購入時に料金が発生します。</p>
                         </div>
                 </li>
                     <li class="faq-list-item">
                         <h3 class="question">返品はできますか？</h3>
                             <span>+</span>
                             <div class="answer">
-                                <p>サービスの趣旨に反する為、原則できかねます。ただ、不良品などの場合は直接購入された店舗へお問い合わせください。</p>
+                                <p>A.サービスの趣旨に反する為、原則できかねます。ただ、不良品などの場合は直接購入された店舗へお問い合わせください。</p>
                             </div>
                     </li>
                 <li class="faq-list-item">
                     <h3 class="question">支払い方法はどうなりますか？</h3>
                         <span>+</span>
                         <div class="answer">
-                            <p>現金、またはカードがご利用できます。</p>
+                            <p>A.現金、またはカードがご利用できます。</p>
+                        </div>
+                </li>
+                <li class="faq-list-item">
+                    <h3 class="question">配達はできますか？</h3>
+                        <span>+</span>
+                        <div class="answer">
+                            <p>A.商品によって異なります。商品の詳細ページにて確認いただけます。</p>
+                        </div>
+                </li>
+                <li class="faq-list-item">
+                    <h3 class="question">キャンセルはできますか？</h3>
+                        <span>+</span>
+                        <div class="answer">
+                            <p>A.ご購入確定前であればキャンセル可能です。</p>
                         </div>
                 </li>
             </ul>
@@ -320,11 +341,23 @@
 
 <!--フッターSTART-->
 <footer class="footer">
-    <p>©️ SAMPLE INC. ALL RIGHT RESERVED.</p>
+    <div class="footer-inner">
+        <h3 class="company-summary">会社概要</h3>
+            <div class="company-info-cat">
+                <ul class="company-info-list">
+                    <li class="company-info">サンプル株式会社</li>
+                    <li class="company-info">事業内容：フードシェアリング事業</li>
+                    <li class="company-info">本社：鹿児島県鹿児島市山下町1-10-100</li>
+                    <li class="company-info">TEL：099-123-4567</li>
+                    <li class="company-info">Email：sample@example.org</li>
+                </ul>
+            </div>       
+    </div>
 </footer>
 <!--フッターEND-->
     
     
-<script src="./assets/script.js"></script>
+<script src="js/script.js"></script>
+<script src="textyle.min.js"></script>
 </body>
 </html>
