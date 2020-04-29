@@ -15,7 +15,8 @@ $active.fadeOut($fade_speed).removeClass("active");
 $next.fadeIn($fade_speed).addClass("active");
 },$interval);
 
-const obj = $(".scroll-animation-obj");
+//メンバーポップアップ
+  const obj = $(".scroll-animation-obj");
   const hopIn = $(".scroll-animation-hop");
   $(window).on('scroll',function(){
     obj.each(function(){
